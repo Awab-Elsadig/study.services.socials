@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	background: rgb(97, 171, 204);
+	background: linear-gradient(90deg, rgba(97, 171, 204, 1) 0%, rgba(79, 146, 179, 1) 100%);
+}
+
+body {
+	display: grid;
+	place-items: center;
+
+	height: 100dvh;
+
+	color: white;
+
+	font-family: "Poppins";
+}
+
+.title {
+	font-size: 4rem;
+}
+
+.socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+
+	width: 100%;
+	max-width: 80rem;
+}
+
+.social {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+
+	width: min(100dvw - 2rem, 30rem);
+
+	padding: 1rem 2rem;
+
+	background-image: radial-gradient(circle 897px at 9% 80.3%, rgba(55, 60, 245, 1) 0%, rgba(234, 161, 15, 0.9) 100.2%);
+
+	font-size: 2rem;
+
+	border-radius: 1rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.social:active {
+	scale: 1.1;
+	rotate: -2deg;
+}
+
+.icon {
+	padding: 1rem;
+
+	font-size: 5rem;
+}
+
+.tiktok {
+	background: linear-gradient(135deg, #111 0%, #444 100%);
+}
+
+.instagram {
+	background-color: #d6249f;
+	background: linear-gradient(135deg, #833ab4, #e1306c);
+}
+
+.whatsapp {
+	background: linear-gradient(135deg, #25d366, #128c7e);
+	color: #fff;
+
+	font-size: 1.8rem;
+}
+
+.facebook {
+	background: linear-gradient(135deg, #1877f3 0%, #42a5f5 100%);
+}
+
+.team-logo {
+	height: 6rem;
+	opacity: 1;
+}
+
+.hashtags {
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+	html {
+		font-size: 55%;
+	}
+
+	.title {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	.socials {
+		flex-direction: column;
+		gap: 1.2rem;
+		padding: 0 1rem;
+	}
+
+	.social {
+		padding: 1.2rem 1rem;
+		font-size: 1.5rem;
+	}
+
+	.icon {
+		font-size: 3.5rem;
+		padding: 0.7rem;
+	}
+
+	.team-logo {
+		height: 4rem;
+	}
+
+	.hashtags {
+		font-size: 1rem;
+	}
+}
