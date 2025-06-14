@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="all.min.css" />
+		<title>Certification Validation</title>
+		<link rel="icon" href="Circle Logo.png" type="image/x-icon" />
+		<style>
+			.certified-message {
+				background: rgba(255, 255, 255, 0.08);
+				border-radius: 1.2rem;
+				box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+				padding: 2.5rem 2rem;
+				margin: 3rem 0;
+				max-width: 40rem;
+				width: 90vw;
+				text-align: center;
+			}
+			.certified-message h2 {
+				font-size: 2.5rem;
+				font-weight: 600;
+				color: #fff;
+				margin: 0;
+				line-height: 1.4;
+			}
+			.certified-message i {
+				margin-bottom: 1rem;
+			}
+			@media (max-width: 600px) {
+				.certified-message {
+					padding: 1.2rem 0.5rem;
+					max-width: 98vw;
+				}
+				.certified-message h2 {
+					font-size: 1.7rem;
+				}
+			}
+			.validate-back {
+				display: inline-block;
+				margin-top: 2rem;
+				color: #fff;
+				background: #1877f3;
+				padding: 0.7rem 2rem;
+				border-radius: 0.5rem;
+				text-decoration: none;
+				font-size: 1.5rem;
+				transition: background 0.2s;
+			}
+			.validate-back:hover {
+				background: #145dc1;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="title">Certification Validation</h1>
+		<div class="certified-message">
+			<i class="fa-solid fa-badge-check" style="color: #4caf50; font-size: 5rem"></i>
+			<h2>This page confirms a certified representative.</h2>
+		</div>
+		<a href="index.html" class="validate-back">Back to Home</a>
+	</body>
+</html>
